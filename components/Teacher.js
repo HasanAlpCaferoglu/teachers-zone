@@ -19,7 +19,7 @@ function Teacher(props) {
         />
       </div>
       <div className="flex flex-col items-center">
-        <h1 className="text-2xl font-bold border-b-4 border-gray-300">
+        <h1 className="text-xl font-bold border-b-4 border-gray-300 sm:text-2xl">
           {props.nameSurname}
         </h1>
         <h3>Area: {props.branch}</h3>
