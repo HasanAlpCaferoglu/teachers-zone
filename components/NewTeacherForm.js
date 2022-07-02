@@ -1,12 +1,5 @@
 import { useRef } from "react";
 
-
-/*
-For an image we take an url from the vikipedia:
-https://upload.wikimedia.org/wikipedia/commons/7/78/Wikipedia_Profile_picture.jpg
-
-*/ 
-
 function NewTeacherForm(props) {
   const nameInputRef = useRef();
   const surnameInputRef = useRef();
@@ -51,7 +44,7 @@ function NewTeacherForm(props) {
     <div className="flex flex-col items-center w-auto scroll">
       <div className="m-10">
         <h1 className="text-5xl border-b-4 p-10 text-center">
-          IT'S TIME TO SHOW YOUR SELF TO THE WORD!
+          IT IS TIME TO SHOW YOUR SELF TO THE WORD!
         </h1>
       </div>
 
