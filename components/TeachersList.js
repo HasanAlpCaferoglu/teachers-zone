@@ -8,7 +8,7 @@ function TeachersList(props) {
 
 
       <div>
-      <ul className="px-5 m-16 place-content-center grid lg:grid-cols-2 xl:grid-cols-3 3xl:grid-cols-4">
+      <ul className="px-5 m-16 place-content-center grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {props.teachers.map((teacher) => (
           <Teacher
             key={teacher.id}

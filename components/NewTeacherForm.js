@@ -43,19 +43,19 @@ function NewTeacherForm(props) {
   return (
     <div className="flex flex-col items-center w-auto scroll">
       <div className="m-10">
-        <h1 className="text-5xl border-b-4 p-10 text-center">
+        <h1 className="text-3xl border-b-4 pb-6 text-center">
           IT IS TIME TO SHOW YOUR SELF TO THE WORD!
         </h1>
       </div>
 
       <form
-        className="flex flex-col content-around text-xl space-y-10"
+        className="flex flex-col content-center justify-center text-xs space-y-8"
         onSubmit={submitHandler}
       >
         <div className="flex justify-between items-center">
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" className="md:text-lg">Name</label>
           <input
-            className="rounded-lg w-96 border-solid bg-gray-300 h-8"
+            className="rounded-lg w-80 border-solid bg-gray-300 h-8 "
             type="text"
             required
             id="name"
@@ -64,9 +64,9 @@ function NewTeacherForm(props) {
           />
         </div>
         <div className="flex justify-between items-center">
-          <label htmlFor="surname">Surname</label>
+          <label htmlFor="surname" className="md:text-lg">Surname</label>
           <input
-            className="rounded-lg w-96 bg-gray-300 h-8"
+            className="rounded-lg w-80 bg-gray-300 h-8"
             type="text"
             required
             id="surname"
@@ -75,9 +75,9 @@ function NewTeacherForm(props) {
           />
         </div>
         <div className="flex justify-between items-center">
-          <label htmlFor="age">Age</label>
+          <label htmlFor="age" className="md:text-lg">Age</label>
           <input
-            className="rounded-lg w-96 bg-gray-300 h-8"
+            className="rounded-lg w-80 bg-gray-300 h-8"
             type="text"
             required
             id="age"
@@ -86,9 +86,9 @@ function NewTeacherForm(props) {
           />
         </div>
         <div className="flex justify-between items-center">
-          <label htmlFor="city">City</label>
+          <label htmlFor="city" className="md:text-lg">City</label>
           <input
-            className="rounded-lg w-96 bg-gray-300 h-8"
+            className="rounded-lg w-80 bg-gray-300 h-8"
             type="text"
             required
             id="city"
@@ -97,9 +97,9 @@ function NewTeacherForm(props) {
           />
         </div>
         <div className="flex justify-between items-center">
-          <label htmlFor="country">Country</label>
+          <label htmlFor="country" className="md:text-lg">Country</label>
           <input
-            className="rounded-lg w-96 bg-gray-300 h-8"
+            className="rounded-lg w-80 bg-gray-300 h-8"
             type="text"
             required
             id="country"
@@ -108,9 +108,9 @@ function NewTeacherForm(props) {
           />
         </div>
         <div className="flex justify-between items-center">
-          <label htmlFor="branch">Branch</label>
+          <label htmlFor="branch" className="md:text-lg">Branch</label>
           <input
-            className="rounded-lg w-96 bg-gray-300 h-8"
+            className="rounded-lg w-80 bg-gray-300 h-8"
             type="text"
             required
             id="branch"
@@ -118,10 +118,10 @@ function NewTeacherForm(props) {
             placeholder="Enter your expert area..."
           />
         </div>
-        <div className="flex justify-between items-center space-x-10">
-          <label htmlFor="telephone">Telephone</label>
+        <div className="flex justify-between items-center space-x-8">
+          <label htmlFor="telephone" className="md:text-lg">Telephone</label>
           <input
-            className="rounded-lg w-96 bg-gray-300 h-8"
+            className="rounded-lg w-80 bg-gray-300 h-8"
             type="text"
             required
             id="telephone"
@@ -130,9 +130,9 @@ function NewTeacherForm(props) {
           />
         </div>
         <div className="flex justify-between items-center">
-          <label htmlFor="image">Picture</label>
+          <label htmlFor="image" className="md:text-lg">Picture</label>
           <input
-            className="rounded-lg w-96 bg-gray-300 h-8"
+            className="rounded-lg w-80 bg-gray-300 h-8"
             type="url"
             id="image"
             ref={imageInputRef}
@@ -140,9 +140,9 @@ function NewTeacherForm(props) {
           />
         </div>
         <div className="flex justify-between items-center h-auto">
-          <label htmlFor="about">About</label>
+          <label htmlFor="about" className="md:text-lg">About</label>
           <textarea
-            className="rounded-lg w-96 bg-gray-300 h-52"
+            className="rounded-lg w-80 bg-gray-300 h-52"
             rows="4" 
             cols="50"
             id="about"
@@ -152,7 +152,7 @@ function NewTeacherForm(props) {
           ></textarea>
         </div>
         <div className="flex self-center mb-16">
-          <button className="bg-orange-500 p-4 rounded-full text-white transition duration-100 transform hover:scale-125">Add Yourself</button>
+          <button className="bg-orange-500 p-2 rounded-full text-white transition duration-100 transform hover:scale-125 xl:mb-20 xl:px-8 ">Add Yourself</button>
         </div>
       </form>
     </div>

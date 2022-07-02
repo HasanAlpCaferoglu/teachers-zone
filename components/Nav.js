@@ -5,7 +5,7 @@ function Nav() {
   const router = useRouter();
   return (
     <nav className="relative">
-      <div className="flex items-center justify-between px-8 py-3 text-xl whitespace-nowrap space-x-10 overflow-x-scroll scrollbar-hide bg-orange-500 xl:text-2xl xl:space-x-10 ">
+      <div className="flex items-center justify-between px-5 py-2 text-sm whitespace-nowrap space-x-8 overflow-x-scroll scrollbar-hide bg-orange-500 xl:text-md xl:space-x-10 ">
         {Branches.map((branch) => (
           <h2
             key={Branches.indexOf(branch)}

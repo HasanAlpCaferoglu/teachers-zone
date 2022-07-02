@@ -9,11 +9,10 @@ function Header() {
   function searchSubmitHandler(e) {
     e.preventDefault();
   }
-  
 
   return (
     <div className="mt-0 flex items-center justify-between h-auto bg-[#0b4961]">
-      <div className="cursor-pointer flex flex-col m-3 font-Anton text-4xl text-[#c4c6c9] xl:text-6xl xl:flex-row xl:m-7">
+      <div className="cursor-pointer flex flex-col m-3 font-Anton text-2xl text-[#c4c6c9] xl:text-4xl xl:flex-row xl:m-5">
         <Link href="/">TEACHERS</Link>
         <p href="/" className="hidden xl:block">
           -
@@ -25,14 +24,14 @@ function Header() {
           type="search"
           name="searchForm"
           onChange={(e) => {
-            router.push(`/?searchForm=${e.target.value}`)
+            router.push(`/?searchForm=${e.target.value}`);
           }} // set the value of state searchQuery anytime the user types in the searchbox
           placeholder="Search for..."
-          className="rounded-full px-2 xl:px-14 xl:py-3"
+          className="rounded-full px-2 xl:pr-10 xl:py-1"
         />
-        <SearchIcon className="h-7 ml-2 text-[#c4c6c9] xl:h-11" />
+        <SearchIcon className="h-4 ml-2 text-[#c4c6c9] xl:h-7" />
       </form>
-      <div className="cursor-pointer h-full text-xl mr-5 bg-orange-500 rounded-full px-5 py-2 text-white font-bold transition duration-100 transform hover:animate-bounce xl:px-16">
+      <div className="cursor-pointer h-full text-md mr-5 bg-orange-500 rounded-full px-2 py-1 text-white font-bold transition duration-100 transform hover:animate-bounce xl:px-8 xl:text-xl">
         <button onClick={() => router.push("/add-teacher")}>
           I am a teacher
         </button>
